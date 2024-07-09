@@ -1,42 +1,450 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0px;
+  margin: 0px;
+  /* background-color: #080808; */
+}
+
+.navbar {
+  background-color: #181818;
+  color: white;
+  font-family: sans-serif;
+  padding: 10px;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.logohead {
+  margin: 0px;
+  font-size: 2rem;
+  background-color: #181818;
+}
+
+.navlink {
+  display: flex;
+  list-style-type: none;
+  gap: 1rem;
+  font-size: 17px;
+  font-weight: bold;
+  background-color: #181818;
+}
+
+.navlink li a {
+  text-decoration: none;
+  color: #ffffffb3;
+    background-color: #181818;
+}
+.navlink li{
+    background-color: #181818;
+}
+.navbar li a:hover {
+  color: white;
+}
+
+;
+
+.search {
+  padding: 0px;
+  background-color: aqua;
+  padding-top: 20px !important;
+  background-color: #c61919;
+    border-radius: 20px;
+}
+
+.searchbox {
+  width: 30rem;
+  height: 3rem;
+  border-radius: 20px;
+  outline: none;
+  background-color: #181818;
+  border: 1px solid #232323;
+  padding-left: 2rem;
+  color: white;
+}
+
+.signbtn {
+  background-color: white;
+  width: 6rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 7px;
+  font-weight: bold;
+  color: #080808;
+
+}
+
+.spotlight {
+  background-image: url(./assets/spotlight.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.box {
+  mix-blend-mode: screen;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.box p {
+  color: white;
+  font-size: 1.3rem;
+  font-family: sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.textbox {
+  width: 40rem;
 }
 
-.card {
-  padding: 2em;
+.gift {
+  background-color: inherit;
+  width: 16rem;
+  mix-blend-mode: screen;
+  margin: auto;
+
 }
 
-.read-the-docs {
-  color: #888;
+.spotbtn {
+  background-color: #7041eb;
+  width: 12rem;
+  height: 2.5rem;
+  border-radius: 10px;
+  color: white;
+  margin-top: 50px;
+
+}
+
+.frame2 {
+  background-color: #080808;
+  position: relative;
+  justify-content: center;
+}
+
+.leftbox {
+  position: absolute;
+  top: -9rem;
+  left: 12rem;
+
+}
+
+.crypto {
+  height: 14rem;
+  width: 30rem;
+  background-color: #232323;
+  border-radius: 25px;
+  padding: 14px;
+
+  display: flex;
+}
+
+.cruptoimg {
+  height: 12rem;
+  width: 40%;
+  background-color: #3b3b3b;
+  border-radius: 20px;
+  padding: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.Cryptoimg {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+
+}
+
+.desc {
+  background-color: #232323;
+  color: aliceblue;
+  width: 60%;
+  padding-left: 1rem;
+  padding-top: 2rem;
+}
+
+.cryptohead {
+  background-color: #232323;
+  font-size: 20px;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.cryptopara {
+  background-color: #232323;
+  color: #828282;
+}
+
+.cryptobox {
+
+  background-color: #232323;
+  border-radius: 20px;
+  display: flex;
+  margin-bottom: 8px;
+
+}
+
+.togglediv {
+  padding: 10px;
+  width: 30rem;
+  height: 20rem;
+  background-color: #101010;
+  overflow-y: scroll;
+}
+
+.cryptoboximg {
+  height: 100px;
+  width: 150px;
+  border-radius: 20px;
+}
+
+.cryptodesc {
+  background-color: #232323;
+  padding: 6px;
+  padding-left: 5px;
+
+}
+
+.cryptodeschead {
+  background-color: #232323;
+  color: white;
+  font-size: 18px;
+}
+
+.cryptodescpara {
+  background-color: #232323;
+  color: #a2a2a2;
+  font-size: 18px;
+}
+
+.frame2 {
+  display: flex;
+}
+
+.left {
+  width: 50%;
+}
+
+.right {
+  width: 50%;
+  padding: 9rem;
+}
+
+.catimg {
+  height: 12rem;
+  width: 12rem;
+  background-color: #101010;
+  border-radius: 20px;
+  padding: 5px;
+  box-shadow: rgb(247, 232, 232) 0px 1px 4px;
+}
+
+.Catimg {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.catdeschead {
+  color: #9b9b9b;
+  font-size: 23px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.catdesc {
+  color: #383838;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.frame3 {
+  justify-content: start;
+  padding-left: 10%;
+  padding-bottom: 15rem;
+    background-color: #080808;
+}
+
+.frame3box {
+  display: flex;
+  gap: 10rem;
+}
+
+.frame3left {
+  padding-top: 20rem;
+}
+
+.timerbox {
+  background-color: #151515;
+  width: 20rem;
+  height: 10rem;
+  border-radius: 20px;
+}
+
+.reward {
+  padding-top: 5rem;
+  display: flex;
+  gap: 5rem;
+  justify-content: end;
+  padding-right: 20%;
+}
+
+.reawardhead {
+  color: #383838;
+}
+
+.time {
+  background-color: #151515;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.reawardhead {
+  background-color: #151515;
+  font-size: 20px;
+}
+
+.maintime {
+  margin-top: 1rem;
+  background-color: #383838;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  border-radius: 10px;
+}
+
+.clock {
+  background-color: #383838;
+  color: white;
+}
+
+.count {
+  background-color: #383838;
+}
+
+.counth3 {
+  background-color: #383838;
+  font-size: 2.2rem;
+  color: #9c9c9c;
+  font-weight: bold;
+}
+
+.countp {
+  background-color: #383838;
+  color: #9c9c9c;
+}
+
+.luckydraw {
+  margin-top: 10px;
+  background-color: #151515;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.luckyimg {
+  border-radius: 20px;
+}
+
+.draw2 {
+  margin-top: 2px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #151515;
+}
+
+.drop {
+  background-color: #151515;
+  color: white;
+}
+
+.gray {
+  background-color: #151515;
+  color: #6b6b6b;
+}
+
+.draw3 {
+  margin-top: 2px;
+  background-color: #151515;
+}
+
+.claimbtn {
+  height: 3rem;
+  background-color: #252525;
+  width: 100%;
+  font-family: sans-serif;
+  color: #a8a8a8;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+.text {
+  background-color: #131313;
+  height: 25rem;
+  width: 20rem;
+  color: #7d7d7d;
+  box-shadow: rgba(225, 223, 223, 0.893) 0px 1px 3px 0px, rgba(184, 187, 190, 0.911) 0px 0px 0px 1px;
+  border-radius: 20px;
+}
+
+.text p {
+  background-color: #131313;
+  margin: 1rem;
+  font-weight: normal;
+}
+
+.textp {
+  color: white;
+}
+
+.border {
+  height: 5px;
+  background-color: #1a1a1a;
+}
+
+.frame4 {
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+      background-color: #080808;
+}
+
+.frame4 h2 {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+
+}
+
+.frame4 p {
+  color: #6b6b6b;
+}
+
+.reels {
+  display: flex;
+  gap: 3rem;
+  padding: 2rem;
+  justify-content: center;
+}
+
+.rellimg {
+  border-radius: 20px;
+  position: relative;
+}
+
+
+
+.container {
+  display: inline-block;
 }
