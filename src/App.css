@@ -145,7 +145,7 @@
   background-color: #232323;
   border-radius: 25px;
   padding: 14px;
-
+  cursor: pointer;
   display: flex;
 }
 
@@ -157,14 +157,11 @@
   padding: 5px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
-
 .Cryptoimg {
   height: 100%;
   width: 100%;
   border-radius: 20px;
-
 }
-
 .desc {
   background-color: #232323;
   color: aliceblue;
@@ -172,28 +169,22 @@
   padding-left: 1rem;
   padding-top: 2rem;
 }
-
 .cryptohead {
   background-color: #232323;
   font-size: 20px;
   margin-bottom: 1rem;
   color: white;
 }
-
 .cryptopara {
   background-color: #232323;
   color: #828282;
 }
-
 .cryptobox {
-
   background-color: #232323;
   border-radius: 20px;
   display: flex;
   margin-bottom: 8px;
-
 }
-
 .togglediv {
   padding: 10px;
   width: 30rem;
@@ -201,32 +192,26 @@
   background-color: #101010;
   overflow-y: scroll;
 }
-
 .cryptoboximg {
   height: 100px;
   width: 150px;
   border-radius: 20px;
 }
-
 .cryptodesc {
   background-color: #232323;
   padding: 6px;
   padding-left: 5px;
-
 }
-
 .cryptodeschead {
   background-color: #232323;
   color: white;
   font-size: 18px;
 }
-
 .cryptodescpara {
   background-color: #232323;
   color: #a2a2a2;
   font-size: 18px;
 }
-
 .frame2 {
   display: flex;
 }
@@ -273,7 +258,7 @@
   justify-content: start;
   padding-left: 10%;
   padding-bottom: 15rem;
-    background-color: #080808;
+  background-color: #080808;
 }
 
 .frame3box {
@@ -450,7 +435,9 @@
   }
   .reelvideo1{
     display: block;
-  }
+  transform: translateY(20px);
+  transition:0.5s ease-in-out, transform 0.5s ease-in-out, 0.5s ease-in-out;
+}  
   
 }
 .reeldiv{
@@ -553,13 +540,23 @@ text-align: center;
   margin: auto; */
 }
 .foot1{
-  width: 40%;
+  width: 100%;
   padding-right: 90px;
 }
 .foot2 {
   width: 20%;
   display: grid;
   text-align: left;
+}
+.footerleft{
+  width: 40%;
+}
+.footerright{
+  width: 60%;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .foot1logo{
  text-align: left;
@@ -587,7 +584,7 @@ background-color: #080808;
   color: white;
 }
 .footerborder{
-  width: 80rem;
+  width: 70vw;
 margin: auto;
 height: 5px;
   background-color: #1a1a1a;
@@ -633,4 +630,59 @@ height: 5px;
 }
 .linkimg{
   margin: auto;
+}
+
+/* Responsivestyle */
+@media only screen and (max-width: 884px) {
+.navlinkdiv{
+display: none;
+}
+.frame2{
+  display: grid;
+}
+.frame3box{
+  display: grid;
+  padding-top: 0px;
+}
+.frame3left{
+  padding-top: 30px;
+}
+.reward{
+  display: grid;
+  gap: 35rem;
+  justify-content: center;
+}
+.Frame5{
+  padding: 40px;
+}
+.foot1{
+  padding-left: 0px;
+}
+.footerdiv{
+  display: grid;
+  flex-wrap: wrap;
+  width: 100vw;
+  gap: 20px;
+  justify-content: center;
+}
+.footnote{
+  width: 100vw;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.lastdiv{
+  width: 100vw;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.footerright{
+  width: 100vw;
+  padding: 20px;
+  display: flex;
+  gap: 25px;
+  justify-content: space-between;
+}
+.footerleft{
+  padding: 30px;
+}
 }

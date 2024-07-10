@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Airdrop from "../assets/airdrop.png";
 import t1 from "../assets/t1.png";
 import t2 from "../assets/t2.jpg";
@@ -9,6 +9,11 @@ import Cat from "../assets/cat2.png";
 import Gift from "../assets/kol-reward-12e6ae06.gif";
 
 const Frame3 = () => {
+  const [isToggleDivVisible, setIsToggleDivVisible] = useState(false);
+
+  const handleclick = () => {
+    setIsToggleDivVisible(!isToggleDivVisible);
+  };
   return (
     <div className="frame3">
       <div className="frame3box">
@@ -25,7 +30,7 @@ const Frame3 = () => {
         </div>
         <div className="frame3right">
           <div className="">
-            <div className="crypto">
+            <div className="crypto" onClick={handleclick}>
               <div className="cruptoimg">
                 <img src={Airdrop} alt="Airdropv" className="Cryptoimg" />
               </div>
@@ -36,62 +41,64 @@ const Frame3 = () => {
                 </p>
               </div>
             </div>
-            <div className="togglediv">
-              <div className="cryptobox">
-                <img src={t1} alt="t1" className="cryptoboximg" />
-                <div className="cryptodesc">
-                  <h3 className="cryptodeschead">
-                    #1: But what is crypto and web3?
-                  </h3>
-                  <p className="cryptodescpara">11 Task</p>
+            {isToggleDivVisible && (
+              <div className="togglediv">
+                <div className="cryptobox">
+                  <img src={t1} alt="t1" className="cryptoboximg" />
+                  <div className="cryptodesc">
+                    <h3 className="cryptodeschead">
+                      #1: But what is crypto and web3?
+                    </h3>
+                    <p className="cryptodescpara">11 Task</p>
+                  </div>
+                </div>
+                <div className="cryptobox">
+                  <img src={t2} alt="t3" className="cryptoboximg" />
+                  <div className="cryptodesc">
+                    <h3 className="cryptodeschead">
+                      #1: But what is crypto and web3?
+                    </h3>
+                    <p className="cryptodescpara">11 Task</p>
+                  </div>
+                </div>
+                <div className="cryptobox">
+                  <img src={t3} alt="t3" className="cryptoboximg" />
+                  <div className="cryptodesc">
+                    <h3 className="cryptodeschead">
+                      #1: But what is crypto and web3?
+                    </h3>
+                    <p className="cryptodescpara">11 Task</p>
+                  </div>
+                </div>
+                <div className="cryptobox">
+                  <img src={t4} alt="t4" className="cryptoboximg" />
+                  <div className="cryptodesc">
+                    <h3 className="cryptodeschead">
+                      #1: But what is crypto and web3?
+                    </h3>
+                    <p className="cryptodescpara">11 Task</p>
+                  </div>
+                </div>
+                <div className="cryptobox">
+                  <img src={t5} alt="t5" className="cryptoboximg" />
+                  <div className="cryptodesc">
+                    <h3 className="cryptodeschead">
+                      #1: But what is crypto and web3?
+                    </h3>
+                    <p className="cryptodescpara">11 Task</p>
+                  </div>
+                </div>
+                <div className="cryptobox">
+                  <img src={t1} alt="t1" className="cryptoboximg" />
+                  <div className="cryptodesc">
+                    <h3 className="cryptodeschead">
+                      #1: But what is crypto and web3?
+                    </h3>
+                    <p className="cryptodescpara">11 Task</p>
+                  </div>
                 </div>
               </div>
-              <div className="cryptobox">
-                <img src={t2} alt="t3" className="cryptoboximg" />
-                <div className="cryptodesc">
-                  <h3 className="cryptodeschead">
-                    #1: But what is crypto and web3?
-                  </h3>
-                  <p className="cryptodescpara">11 Task</p>
-                </div>
-              </div>
-              <div className="cryptobox">
-                <img src={t3} alt="t3" className="cryptoboximg" />
-                <div className="cryptodesc">
-                  <h3 className="cryptodeschead">
-                    #1: But what is crypto and web3?
-                  </h3>
-                  <p className="cryptodescpara">11 Task</p>
-                </div>
-              </div>
-              <div className="cryptobox">
-                <img src={t4} alt="t4" className="cryptoboximg" />
-                <div className="cryptodesc">
-                  <h3 className="cryptodeschead">
-                    #1: But what is crypto and web3?
-                  </h3>
-                  <p className="cryptodescpara">11 Task</p>
-                </div>
-              </div>
-              <div className="cryptobox">
-                <img src={t5} alt="t5" className="cryptoboximg" />
-                <div className="cryptodesc">
-                  <h3 className="cryptodeschead">
-                    #1: But what is crypto and web3?
-                  </h3>
-                  <p className="cryptodescpara">11 Task</p>
-                </div>
-              </div>
-              <div className="cryptobox">
-                <img src={t1} alt="t1" className="cryptoboximg" />
-                <div className="cryptodesc">
-                  <h3 className="cryptodeschead">
-                    #1: But what is crypto and web3?
-                  </h3>
-                  <p className="cryptodescpara">11 Task</p>
-                </div>
-              </div>
-            </div>
+            )}
           </div>
         </div>
       </div>

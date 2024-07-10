@@ -14,7 +14,7 @@ const Frame5 = () => {
         <div className="first">Essentials</div>
         <div className="second">Alpha Hub</div>
       </div>
-      <div className="border"></div>
+      {/* <div className="border"></div> */}
     </div>
   );
 }

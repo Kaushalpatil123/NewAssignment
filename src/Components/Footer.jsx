@@ -8,74 +8,78 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="footerdiv">
-        <div className="foot1">
-          <div className="foot1logo">
-            <h1 className="logohead">intract.</h1>
+        <div className="footerleft">
+          <div className="foot1">
+            <div className="foot1logo">
+              <h1 className="logohead">intract.</h1>
+            </div>
+            <p className="foot1desc">
+              We are your personal guide for exploring web3 projects & earning
+              100x rewards
+            </p>
           </div>
-          <p className="foot1desc">
-            We are your personal guide for exploring web3 projects & earning
-            100x rewards
-          </p>
         </div>
-        <div className="foot2">
-          <h4 className="foot2head">INTRACT</h4>
-          <a href="" className="fooo2link">
-            Explore Quests
-          </a>
-          <a href="" className="fooo2link">
-            Comunities
-          </a>
-          <a href="" className="fooo2link">
-            Alpha Hub
-          </a>
-        </div>
-        <div className="foot2">
-          <h4 className="foot2head">EARN</h4>
-          <a href="" className="fooo2link">
-            Refer & Earn
-          </a>
-          <a href="" className="fooo2link">
-            Leaderboard
-          </a>
-          <a href="" className="fooo2link">
-            Achievements
-          </a>
-        </div>
-        <div className="foot2">
-          <h4 className="foot2head">ABOUT</h4>
-          <a href="" className="fooo2link">
-            Product Roadmap
-          </a>
-          <a href="" className="fooo2link">
-            Affiliate Program
-          </a>
-          <a href="" className="fooo2link">
-            Sign up Program
-          </a>
-          <a href="" className="fooo2link">
-            Growth Community
-          </a>
-          <a href="" className="fooo2link">
-            Blogs
-          </a>
-        </div>
-        <div className="foot2">
-          <h4 className="foot2head">SUPPORT</h4>
-          <a href="" className="fooo2link">
-            Help Center
-          </a>
-          <a href="" className="fooo2link">
-            Create your quest
-          </a>
-          <a href="" className="fooo2link">
-            Terms of Service
-          </a>
-          <a href="" className="fooo2link">
-            Privacy Policy
-          </a>
-          <a href="" className="fooo2link">
-            Community Guidelines
-          </a>
+        <div className="footerright">
+          <div className="foot2">
+            <h4 className="foot2head">INTRACT</h4>
+            <a href="" className="fooo2link">
+              Explore Quests
+            </a>
+            <a href="" className="fooo2link">
+              Comunities
+            </a>
+            <a href="" className="fooo2link">
+              Alpha Hub
+            </a>
+          </div>
+          <div className="foot2">
+            <h4 className="foot2head">EARN</h4>
+            <a href="" className="fooo2link">
+              Refer & Earn
+            </a>
+            <a href="" className="fooo2link">
+              Leaderboard
+            </a>
+            <a href="" className="fooo2link">
+              Achievements
+            </a>
+          </div>
+          <div className="foot2">
+            <h4 className="foot2head">ABOUT</h4>
+            <a href="" className="fooo2link">
+              Product Roadmap
+            </a>
+            <a href="" className="fooo2link">
+              Affiliate Program
+            </a>
+            <a href="" className="fooo2link">
+              Sign up Program
+            </a>
+            <a href="" className="fooo2link">
+              Growth Community
+            </a>
+            <a href="" className="fooo2link">
+              Blogs
+            </a>
+          </div>
+          <div className="foot2">
+            <h4 className="foot2head">SUPPORT</h4>
+            <a href="" className="fooo2link">
+              Help Center
+            </a>
+            <a href="" className="fooo2link">
+              Create your quest
+            </a>
+            <a href="" className="fooo2link">
+              Terms of Service
+            </a>
+            <a href="" className="fooo2link">
+              Privacy Policy
+            </a>
+            <a href="" className="fooo2link">
+              Community Guidelines
+            </a>
+          </div>
         </div>
       </div>
       <div className="footerborder"></div>
