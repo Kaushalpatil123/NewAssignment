@@ -4,6 +4,8 @@ import gift from "../assets/academy-animated-logo-.gif";
 import Frame2 from "./Frame2";
 import Frame3 from "./Frame3";
 import Frame4 from "./Frame4";
+import Frame5 from "./Frame5";
+import Footer from "./Footer";
 
 
 const Mainbody = () => {
@@ -23,7 +25,9 @@ const Mainbody = () => {
       </div>
       <Frame2 />
       <Frame3 />
-      <Frame4/>
+      <Frame4 />
+      <Frame5 />
+      <Footer/>
     </>
   );
 };
